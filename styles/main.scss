@@ -1,0 +1,56 @@
+// variables
+@import "./components/variables";
+
+// general styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primary-font;
+  outline: none;
+}
+
+body {
+  background: #fff;
+  font-size: 32px;
+  background: url("../../images/pattern-bg.svg") no-repeat;
+  background-position: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.attribution {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: .4em;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: $dark-blue;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 26px;
+    background-position: top;
+    background-size: contain;
+  }
+
+  .attribution {
+    left: 50%;
+    bottom: 2%;
+    text-align: center;
+
+    transform: translate(-50%, 0);
+  }
+}
+
+// components
+@import "./components/slider";
